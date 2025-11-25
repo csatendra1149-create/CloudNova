@@ -105,11 +105,6 @@
           <li>
             <a href="/schedule-demo.html" id="book-demo-btn">Get a Demo</a>
 
-            
-          
-
-
-
           </li>
           <li class="social-icon">
   <a href="https://github.com/cloudnova/cloudnova" target="_blank" aria-label="GitHub">
@@ -118,23 +113,12 @@
     </svg>
   </a>
 </li>
-
         </ul>
       </div>
     </div>
   </nav>
 
-
-
-
-
-
-  
-
-
-
-
-  <!-- Landing Section -->
+<!-- Landing Section -->
   <section class="landing-container container text-white my-md-5 my-0">
     <div class="d-flex justify-content-center align-items-center flex-column">
       <h1 class="main-heading text-center">
@@ -341,7 +325,7 @@
         <div class="tab-content mt-4">
           <div id="docker" role="tabpanel" class="tab-pane active">
             <div class="code position-relative">
-              <span id="install-text">curl -L https://cloudnova.com/install.sh | sh</span>
+              <span id="install-text">curl -L https://cloudnova.com/install.Cn | Cn</span>
               <i class="fa-regular fa-clone position-absolute copy-btn" id="copyBtn" data-toggle="tooltip"></i>
               <svg class="check-mark" id="check-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <polyline points="4 12 9 17 20 6" />
@@ -353,31 +337,43 @@
     </div>
   </section>
 
+  
   <!-- Contribute and Community -->
-  <section class="pt-md-5 pt-0">
-    <div class="container position-relative">
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-md-6 col-10 bottom-cards git-card d-flex justify-content-center align-items-center flex-column text-center"
-          onclick="redirectToPage('https://github.com/cloudnova/cloudnova')">
-          <div>
-            <i class="fa-solid fa-star"></i>
-          </div>
-          <div class="heading my-3">Star and Contribute</div>
-          <div class="para-light">CloudNova is Open Source. We love contributions.</div>
+<section class="pt-md-5 pt-0 position-relative">
+  <div class="container position-relative">
+
+    <!-- Gradient Glow Background -->
+    <img src="./assets/gradient-3.svg" 
+         alt="gradient" 
+         class="light-gradient">
+
+    <div class="row d-flex justify-content-center align-items-center">
+      
+      <!-- Card 1 -->
+      <div class="col-md-6 col-10 bottom-cards git-card d-flex justify-content-center align-items-center flex-column text-center"
+        onclick="redirectToPage('https://github.com/cloudnova/cloudnova')">
+        <div>
+          <i class="fa-solid fa-star"></i>
         </div>
-        
-        <div class="col-md-6 col-10 bottom-cards community-card d-flex justify-content-center align-items-center flex-column text-center"
-          onclick="redirectToPage('/slack.html')">
-          <div>
-            <i class="fa-brands fa-slack"></i>
-            <img src="./assets/slack.svg" alt="slack-icon" class="slack-icon">
-          </div>
-          <div class="heading my-3">Join the community</div>
-          <div class="para-light">Join our community for instant support and rich conversations.</div>
-        </div>
+        <div class="heading my-3">Star and Contribute</div>
+        <div class="para-light">CloudNova is Open Source. We love contributions.</div>
       </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-6 col-10 bottom-cards community-card d-flex justify-content-center align-items-center flex-column text-center"
+        onclick="redirectToPage('/slack.html')">
+        <div>
+          <i class="fa-brands fa-slack"></i>
+          <img src="./assets/slack.svg" alt="slack-icon" class="slack-icon">
+        </div>
+        <div class="heading my-3">Join the community</div>
+        <div class="para-light">Join our community for instant support and rich conversations.</div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Footer -->
   <footer id="footer" class="pb-5">

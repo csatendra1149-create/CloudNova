@@ -445,6 +445,29 @@ a:focus {
     height: 30px;
 }
 
+
+
+.light-gradient {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    transform: translate(-50%, -40%);
+    z-index: -1;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 /*FOOTER SECTION */
 #footer {
     margin-top: 90px;
