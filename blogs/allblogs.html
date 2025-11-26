@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CloudNova | Blogs</title>
+  
+  <!-- FIX 1: Pointing up to the main folder for favicon -->
+  <link rel="icon" href="../favicon.svg">
+  
+  <!-- Font-awesome (Online link works everywhere) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- FIX 2: Pointing up to the CSS folder -->
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./blog.css"> 
+  
+  <!-- Meta Tags -->
+  <meta name="description" content="CloudNova Open Source Observability Blogs">
+</head>
+<body id="dark-theme">
+
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg fixed-top d-flex flex-column p-0">
+    <div class="container py-2 px-4 px-md-0">
+      
+      <!-- FIX 3: Link back to the main Home page -->
+      <a class="navbar-brand" href="../index.html">
+        <div class="d-flex align-items-center">
+          <div class="pr-2">
+            <!-- CloudNova Logo SVG -->
+            <svg width="40" height="40" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="cloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#1E90FF;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#9370DB;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+              <rect width="400" height="400" rx="80" fill="url(#cloudGradient)"/>
+              <path d="M280,220 Q280,180 240,180 Q240,140 200,140 Q160,140 160,180 Q120,180 120,220 Q120,260 160,260 L280,260 Q320,260 320,220 Q320,180 280,180" fill="white" opacity="0.95"/>
+            </svg>
+          </div>
+          <div class="font-weight-bold text-white h2 pl-1 mb-0">CloudNova</div>
+        </div>
+      </a>
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Docs</a>
+          </li>
+          <li class="nav-item active">
+            <!-- We are currently ON the blog page -->
+             
+            <a class="nav-link" href="#blogs-section">Blogs</a>
+            
+
+
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Company</a>
+            <div class="dropdown-menu">
+              <!-- FIX 4: Links to other pages go up one level -->
+              <a class="dropdown-item" href="../investors.html">Investors</a>
+              <a class="dropdown-item" href="../press-news.html">Press & News</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Community</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="https://github.com/cloudnova/cloudnova">GitHub</a>
+              <a class="dropdown-item" href="../slack.html">Slack</a>
+            </div>
+          </li>
+          <li><a href="../index.html#getting-started" id="try-now-btn">Try Now</a></li>
+          <li><a href="../schedule-demo.html" id="book-demo-btn">Get a Demo</a></li>
+          <li class="social-icon">
+  <a href="https://github.com/cloudnova/cloudnova" target="_blank" aria-label="GitHub">
+    <svg width="40" height="40" viewBox="0 0 98 96" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" fill="#fff"/>
+    </svg>
+  </a>
+</li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <section class="blogs-section">
+    <div class="container">
+      <h1 class="main-heading text-white">Blogs</h1>
+      
+      <div class="blog-grid">
+        <!-- Card 1 -->
+        <div class="card">
+          <a href="./siglens-vs-clickhouse.html">
+            <div class="img-wrapper">
+              <img class="card-img" 
+                   src="../assets/siglens-vs-clickhouse-cover-Img.png" 
+                   alt="SigLens vs ClickHouse">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">ClickHouse Falling Short? Here's SigLens</h5>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <a href="./siglens-vs-loki.html">
+            <div class="img-wrapper">
+              <img class="card-img" 
+                   src="../assets/siglens-vs-loki-cover-Img.png" 
+                   alt="SigLens vs Loki">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Loki Limitations? Try SigLens</h5>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <a href="./siglens-vs-newrelic.html">
+            <div class="img-wrapper">
+              <img class="card-img" 
+                   src="../assets/siglens-vs-newrelic-cover-Img.png" 
+                   alt="SigLens vs New Relic">
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">New Relic Burning Your Budget? Meet SigLens</h5>
+            </div>
+          </a>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" class="pb-5">
+    <div class="container">
+      <div class="row py-0 py-md-5">
+        <div class="col-md-7 d-flex flex-row pl-5 footer-links order-1 order-md-0 mt-5 mt-md-0">
+          <div>
+            <a href="https://cloudnova.github.io/cloudnova-docs/" target="_blank" class="footer-nav-heading">Docs</a>
+          </div>
+          <div>
+            <a href="/blog/allblogs.html" class="footer-nav-heading">Blogs</a>
+          </div>
+          <div class="d-flex flex-column">
+            <a href="#" class="footer-nav-heading">Company</a>
+            <a class="mt-3 pl-2" href="/investors.html">Investors</a>
+            <a class="mt-3 pl-2" href="/press-news.html">Press & News</a>
+          </div>
+          <div class="d-flex flex-column">
+            <a href="#" class="footer-nav-heading">Community</a>
+            <a class="mt-3 pl-2" href="https://github.com/cloudnova/cloudnova">GitHub</a>
+            <a class="mt-3 pl-2" href="/slack.html">Slack</a>
+          </div>
+        </div>
+        
+        <div class="col-md-5 text-md-start order-0 order-md-1 mx-4 mx-md-0">
+          <h5 class="text-start font-weight-bold text-white">Subscribe to our newsletter</h5>
+          <form class="d-flex gap-4 align-items-end flex-row" id="newsletter-form">
+            <button class="btn btn-primary mt-2" id="ns-form-btn">
+              <a href="https://forms.gle/D4UmjNiJuzTe1Jnd7" target="_blank">Subscribe</a>
+            </button>
+          </form>
+        </div>
+        
+        <div class="col-md-4 col-sm-12 mt-5 pl-5 order-2 order-md-2">
+          <div class="d-flex">
+            <a class="mr-4" href="https://twitter.com/CloudNovaHQ" target="_blank">
+              <div class="icon-container"><i class="fa-brands fa-x-twitter"></i></div>
+            </a>
+            <a class="mr-4" href="https://www.linkedin.com/company/cloudnova-io/" target="_blank">
+              <div class="icon-container"><i class="fa-brands fa-linkedin-in"></i></div>
+            </a>
+            <a href="https://www.cloudnova.com/blog/blog-rss.xml" target="_blank" title="Subscribe to RSS feed">
+              <div class="icon-container"><i class="fa-solid fa-rss"></i></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center credits flex-column align-items-center mt-5 mt-md-0">
+        <svg width="50" height="50" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="footerCloudGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" style="stop-color:#1E90FF;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#9370DB;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <rect width="400" height="400" rx="80" fill="url(#footerCloudGradient)"/>
+          <path d="M280,220 Q280,180 240,180 Q240,140 200,140 Q160,140 160,180 Q120,180 120,220 Q120,260 160,260 L280,260 Q320,260 320,220 Q320,180 280,180" 
+                fill="white" opacity="0.95"/>
+        </svg>
+        <div class="font-weight-bold text-white h1 mb-4 mt-2">CloudNova</div>
+        <div class="text-center">Made with ❤️ in Satendra, Rome Italy, India.</div>
+        <div>Copyright © 2025 - <strong class="text-white">CloudNova.</strong></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
