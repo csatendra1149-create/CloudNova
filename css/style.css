@@ -1505,6 +1505,27 @@ line-height: 26px;}
 
 
 
+.logo-wrap svg {
+  transition: transform 0.25s ease-out, opacity 0.25s ease-out;
+}
+
+.logo-wrap:hover svg {
+  transform: translateY(-1px) scale(1.02);
+  opacity: 0.95;
+}
+
+
+
+
+footer svg {
+  transition: transform 0.25s ease-out, opacity 0.25s ease-out;
+}
+
+footer svg:hover {
+  transform: translateY(-1px) scale(1.05);
+  opacity: 0.95;
+}
+
 
 
 
